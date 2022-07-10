@@ -1,0 +1,8 @@
+#contenedorProductos{
+    display: flex;
+}
+
+.producto {
+    border: 3px solid black;
+}
+

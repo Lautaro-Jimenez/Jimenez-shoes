@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
     <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <title>Jimenez | Tienda de calzado</title>
     <script src="/js/stock.js" async></script>
     <script src="/js/modal.js" async></script>
@@ -16,8 +20,10 @@
         <h1>Jimenez Calzados</h1>
 
         <input id="buscar" type="text" class="input" placeholder="Buscar producto">
-        <button id="botonCarrito"><span id="contadorCarrito">0</span></button>
+        <button id="botonCarrito"><i class="fas fa-shopping-cart"></i><span id="contadorCarrito">0</span></button>
     </header>
+
+    <hr>
 
     <div class="seleccionar">
         <select id="seleccionarNumeroTalle">
@@ -28,6 +34,7 @@
             <option value="43">Talle 43</option>
         </select>
     </div>
+
 
     <main id="contenedorProductos">
         <!-- voy a generar de forma dinámica (a través de js) este tipo de tarjeta de producto

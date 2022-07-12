@@ -1,4 +1,6 @@
-let carrito = []
+let carrito;
+const carritoLocalStorage = JSON.parse(localStorage.getItem('carrito') )
+
 
 const contenedorProductos = document.getElementById("contenedorProductos");  // ésta variable global va a estar destinada al MAIN del html
 const carritoContenedor = document.getElementById("carrito-contenedor");  // ésta variable global va a estar destinada al DIV que contiene los productos del carrito 
@@ -24,8 +26,6 @@ seleccionarNumeroTalle.addEventListener("change", () => {
     }
 })
 
-
-
 const mostrarProductos = (array) => {
     contenedorProductos.innerHTML = ""
 
@@ -38,11 +38,11 @@ const mostrarProductos = (array) => {
                         <div class="card">
                             <div class="card-image">
                                 <img src="${elemento.img}">
-                                <span class="card-title">${elemento.nombre}</span>
+                                <div class="nombreProd"><span class="card-title">${elemento.nombre}</span></div>
                             </div>
                             <div class="card-content">
                                 <p>${elemento.descripcion}</p>
-                                <p>calzado:${elemento.numeroTalle}</p>
+                                <p>calzado: ${elemento.numeroTalle}</p>
                                 <p>$${elemento.precio}</p>
                                 <button id="boton${elemento.id}" type="button" class="btn btn-primary">Añadir al carro</button>
                             </div>
@@ -66,6 +66,7 @@ const agregarAlCarrito = (id) => {
 
     let agregarProd = stockCalzados.find(prod => prod.id === id);
     carrito.push(agregarProd);
+    localStorage.setItem('carrito', JSON.stringify(carrito))
     mostrarCarrito(agregarProd);
     actualizarCarrito()
 
@@ -98,3 +99,13 @@ const actualizarCarrito = () => {
 }
 
 mostrarProductos(stockCalzados)
+
+
+if (carritoLocalStorage){
+    carrito = carritoLocalStorage
+
+    mostrarCarrito()
+    actualizarCarrito()
+} else {
+    carrito = []
+}

@@ -1,5 +1,5 @@
 let carrito;
-const carritoLocalStorage = JSON.parse(localStorage.getItem('carrito') )
+const carritoLocalStorage = JSON.parse(localStorage.getItem('carrito') ) ?? [];  // optimizacion con operador avanzado
 
 
 const contenedorProductos = document.getElementById("contenedorProductos");  // ésta variable global va a estar destinada al MAIN del html

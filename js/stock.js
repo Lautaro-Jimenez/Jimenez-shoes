@@ -1,16 +1,16 @@
 let stockCalzados = [
-    {id: 1, nombre: "ADIDAS 1", tipo: "calzado", descripcion: "Unas zapatillas para salir a correr", precio: 13999, numeroTalle: "40", img: "/img/zapatilla1.jpg"},
-    {id: 2, nombre: "ADIDAS 2", tipo: "calzado", descripcion: "Unas zapatillas para salir a correr", precio: 12999, numeroTalle: "40", img: "/img/zapatilla2.jpg"},
-    {id: 3, nombre: "ADIDAS 3", tipo: "calzado", descripcion: "Unas zapatillas para salir a correr", precio: 13499, numeroTalle: "40", img: "/img/zapatilla3.jpg"},
-    {id: 4, nombre: "ADIDAS 4", tipo: "calzado", descripcion: "Unas zapatillas que combinan con todo", precio: 9599, numeroTalle: "41", img: "/img/zapatilla4.jpg"},
-    {id: 5, nombre: "ADIDAS 5", tipo: "calzado", descripcion: "Unas zapatillas que combinan con todo", precio: 8999, numeroTalle: "41", img: "/img/zapatilla5.jpg"},
-    {id: 6, nombre: "ADIDAS 6", tipo: "calzado", descripcion: "Unas zapatillas que combinan con todo", precio: 17999, numeroTalle: "41", img: "/img/zapatilla6.jpg"},
-    {id: 7, nombre: "ADIDAS 7", tipo: "calzado", descripcion: "Unas zapatillas para ir a andar en bici", precio: 11599, numeroTalle: "42", img: "/img/zapatilla7.jpg"},
-    {id: 8, nombre: "ADIDAS 8", tipo: "calzado", descripcion: "Unas zapatillas para salir", precio: 10799, numeroTalle: "42", img: "/img/zapatilla8.jpg"},
-    {id: 9, nombre: "ADIDAS 9", tipo: "calzado", descripcion: "Unas zapatillas para salir", precio: 9799, numeroTalle: "42", img: "/img/zapatilla9.jpg"},
-    {id: 10, nombre: "ojota1", tipo: "calzado", descripcion: "Estas ojotas son ideales para estar en casa", precio: 4999, numeroTalle: "43", img: "/img/ojota1.jpg"},
-    {id: 11, nombre: "ojota2", tipo: "calzado", descripcion: "Estas ojotas son ideales para ir a la playa", precio: 6599, numeroTalle: "43", img: "/img/ojota2.jpg"},
-    {id: 12, nombre: "ojota3", tipo: "calzado", descripcion: "Demostra que sos fanático de Star Wars", precio: 4999, numeroTalle: "43", img: "/img/ojota3.jpg"}
+    {id: 1, nombre: "ADIDAS 1", tipo: "calzado", descripcion: "Unas zapatillas para salir a correr", precio: 13999, numeroTalle: "40", img: "./img/zapatilla1.jpg"},
+    {id: 2, nombre: "ADIDAS 2", tipo: "calzado", descripcion: "Unas zapatillas para salir a correr", precio: 12999, numeroTalle: "40", img: "./img/zapatilla2.jpg"},
+    {id: 3, nombre: "ADIDAS 3", tipo: "calzado", descripcion: "Unas zapatillas para salir a correr", precio: 13499, numeroTalle: "40", img: "./img/zapatilla3.jpg"},
+    {id: 4, nombre: "ADIDAS 4", tipo: "calzado", descripcion: "Unas zapatillas que combinan con todo", precio: 9599, numeroTalle: "41", img: "./img/zapatilla4.jpg"},
+    {id: 5, nombre: "ADIDAS 5", tipo: "calzado", descripcion: "Unas zapatillas que combinan con todo", precio: 8999, numeroTalle: "41", img: "./img/zapatilla5.jpg"},
+    {id: 6, nombre: "ADIDAS 6", tipo: "calzado", descripcion: "Unas zapatillas que combinan con todo", precio: 17999, numeroTalle: "41", img: "./img/zapatilla6.jpg"},
+    {id: 7, nombre: "ADIDAS 7", tipo: "calzado", descripcion: "Unas zapatillas para ir a andar en bici", precio: 11599, numeroTalle: "42", img: "./img/zapatilla7.jpg"},
+    {id: 8, nombre: "ADIDAS 8", tipo: "calzado", descripcion: "Unas zapatillas para salir", precio: 10799, numeroTalle: "42", img: "./img/zapatilla8.jpg"},
+    {id: 9, nombre: "ADIDAS 9", tipo: "calzado", descripcion: "Unas zapatillas para salir", precio: 9799, numeroTalle: "42", img: "./img/zapatilla9.jpg"},
+    {id: 10, nombre: "ojota1", tipo: "calzado", descripcion: "Estas ojotas son ideales para estar en casa", precio: 4999, numeroTalle: "43", img: "./img/ojota1.jpg"},
+    {id: 11, nombre: "ojota2", tipo: "calzado", descripcion: "Estas ojotas son ideales para ir a la playa", precio: 6599, numeroTalle: "43", img: "./img/ojota2.jpg"},
+    {id: 12, nombre: "ojota3", tipo: "calzado", descripcion: "Demostra que sos fanático de Star Wars", precio: 4999, numeroTalle: "43", img: "./img/ojota3.jpg"}
 ]
 
 

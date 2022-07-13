@@ -5,7 +5,6 @@ const carritoLocalStorage = JSON.parse(localStorage.getItem('carrito') ) ?? []; 
 const contenedorProductos = document.getElementById("contenedorProductos");  // ésta variable global va a estar destinada al MAIN del html
 const carritoContenedor = document.getElementById("carrito-contenedor");  // ésta variable global va a estar destinada al DIV que contiene los productos del carrito 
 
-const botonFinalizar = document.getElementById("finalizar");
 const terminarCompra = document.getElementById("fin-compra");
 
 const contadorCarrito = document.getElementById("contadorCarrito");
@@ -89,6 +88,16 @@ const mostrarCarrito = (agregarProd) => {
         botonEliminar.parentElement.remove()
         carrito = carrito.filter(elemento => elemento.id !== agregarProd.id)
         actualizarCarrito()
+    })
+    
+    // agrego un botón para finalizar la compra al cual le aplico la librería sweet alert 2
+    let botonFinalizar = document.getElementById("finalizar")
+    botonFinalizar.addEventListener("click", () => {
+        Swal.fire(
+            'Listo!',
+            'Compra realizada con éxito',
+            'success'
+        )
     })
 }
 
